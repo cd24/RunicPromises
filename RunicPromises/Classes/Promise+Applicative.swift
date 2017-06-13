@@ -28,9 +28,7 @@ public func pure<T>(_ value: T) -> Promise<T> {
 extension Promise {
     public func apply<Q>(_ f: Promise<(T)->Q>) -> Promise<Q> {
         return f.then { (fn: @escaping (T)->Q) -> Promise<Q> in
-            return self.then { value -> Promise<Q> in
-                return Promise<Q>(value: fn(value))
-            }
+            return fn <^> self
         }
     }
 
