@@ -22,7 +22,7 @@ pod "RunicPromises"
 
 ## Author
 
-cd24, jmcavey@privacystar.com
+cd24, mcaveyjc@gmail.com
 
 ## License
 
