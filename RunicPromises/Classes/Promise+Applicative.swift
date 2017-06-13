@@ -1,5 +1,5 @@
 //
-//  Promise+Functor.swift
+//  Promise+Applicative.swift
 //  RunicPromises
 //
 //  Created by John McAvey on 6/12/17.
